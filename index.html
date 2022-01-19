@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-</style>
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Javascript</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Calculator</title>
 </head>
-
-<body ononline="onFunction()" onoffline="offFunction()">
-  <!-- <h1 id="mth1" onmouseover="bgdColor1()" onmouseout="mouseoOut()" >Hello Javascript</h1> -->
-  <h1 id="mth1">Hello Javascript</h1>
-  <!-- <form method="post" action="/action.php" onsubmit="func()"> -->
-  Enter Name <input type="text" name="text" id="fname" value="" ona oninput="bgdColor2()" onkeyup="manage(this)">
-  <button class="btnSub"
-    onclick="document.getElementById('ntsbt').innerHTML='Submitted Successfully'; document.getElementById('ntsbt').style.backgroundColor='Green'">Confirm</button><br>
-  <button class="btnSub" onclick="bgdColor1(); manage(fname)" id="btSubmit" disabled>Submit</button><br>
-  <p id="ntsbt" class="submittion">Not submitted</p>
-  <button class="btnClr" onclick="reset();bgdColor3();manage(fname);confirm(fname)">Reset</button>
-  </form>
+<body>
+    <h1 class="bg-primary"> Simple Calculator</h1>
+    <div id="container">
+        <div id="calculator">
+            <div id="answer">
+                <div id="history">
+                    <p id="history-val"></p>
+                </div>
+                <div id="output">
+                    <p id="output-val"></p>
+                </div>
+            </div>
+            <div id="keyboard">
+                <button class="operator" id="C">C</button>
+                <button class="operator" id="CE">CE</button>
+                <button class="operator" id="%">%</button>
+                <button class="operator" id="/">&#247</button>
+                <button class="number" id="7">7</button>
+                <button class="number" id="8">8</button>
+                <button class="number" id="9">9</button>
+                <button class="operator" id="*">&#215</button>
+                <button class="number" id="4">4</button>
+                <button class="number" id="5">5</button>
+                <button class="number" id="6">6</button>
+                <button class="operator" id="-">-</button>
+                <button class="number" id="1">1</button>
+                <button class="number" id="2">2</button>
+                <button class="number" id="3">3</button>
+                <button class="operator" id="+">+</button>
+                <button class="empty" id="empty"></button>
+                <button class="number" id="0">0</button>
+                <button class="empty" id="empty"></button>
+                <button class="operator" id="=">=</button>
+                
+            </div>
+        </div>
+    </div>
+   
 </body>
 <script src="script.js"></script>
-
 </html>
